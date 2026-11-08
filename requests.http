@@ -1,0 +1,31 @@
+### Verificar servidor
+GET http://localhost:3000/health
+
+### Crear un registro
+POST http://localhost:3000/api/v1/demo
+Content-Type: application/json
+
+{
+  "name": "Mi primer registro",
+  "description": "Guardado desde VS Code en MongoDB Atlas",
+  "active": true
+}
+
+### Listar todos
+GET http://localhost:3000/api/v1/demo
+
+### Consultar por id (reemplazar ID_REAL)
+GET http://localhost:3000/api/v1/demo/ID_REAL
+
+### Actualizar por id
+PUT http://localhost:3000/api/v1/demo/ID_REAL
+Content-Type: application/json
+
+{
+  "name": "Registro actualizado",
+  "description": "Actualizado desde VS Code",
+  "active": false
+}
+
+### Eliminar por id
+DELETE http://localhost:3000/api/v1/demo/ID_REAL
