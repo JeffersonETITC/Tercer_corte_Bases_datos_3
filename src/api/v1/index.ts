@@ -1,8 +1,8 @@
 import { Router } from "express";
-import demoRoutes from "../../modules/demo/demo.routes";
+import librosRoutes from "../../modules/biblioteca/libro.routes";
 
 const router = Router();
 
-router.use("/demo", demoRoutes);
+router.use("/libros", librosRoutes);
 
 export default router;
